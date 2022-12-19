@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grey"
+    tools:context=".BerandaActivity">
+
+    <View
+        android:id="@+id/view2"
+        android:layout_width="wrap_content"
+        android:layout_height="220dp"
+        android:background="@drawable/beranda_illustration"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/view3"
+        android:layout_width="350dp"
+        android:layout_height="415dp"
+        android:layout_marginTop="85dp"
+        android:background="@drawable/beranda_input_card"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:id="@+id/tvAsal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/robotomedium"
+        android:text="Asal"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@+id/editAsal"
+        app:layout_constraintTop_toTopOf="@+id/view3" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/editAsal"
+        android:layout_width="300dp"
+        android:layout_height="48dp"
+        android:drawableStart="@drawable/ic_mobil"
+        android:drawablePadding="7dp"
+        android:fontFamily="@font/robotoregular"
+        android:hint="Bandar Lampung"
+        android:paddingStart="7dp"
+        android:paddingEnd="10dp"
+        app:layout_constraintEnd_toEndOf="@+id/view3"
+        app:layout_constraintStart_toStartOf="@+id/view3"
+        app:layout_constraintTop_toBottomOf="@+id/tvAsal" />
+
+    <TextView
+        android:id="@+id/tvTujuan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:fontFamily="@font/robotomedium"
+        android:text="Tujuan"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@+id/editAsal"
+        app:layout_constraintTop_toBotomOf="@+id/view3"
+        app:layout_constraintTop_toBottomOf="@+id/editAsal" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/editTujuan"
+        android:layout_width="300dp"
+        android:layout_height="48dp"
+        android:drawableStart="@drawable/ic_mobil"
+        android:drawablePadding="7dp"
+        android:fontFamily="@font/robotoregular"
+        android:hint="Bandar Lampung"
+        android:paddingStart="7dp"
+        android:paddingEnd="10dp"
+        app:layout_constraintStart_toStartOf="@+id/editAsal"
+        app:layout_constraintTop_toBottomOf="@+id/tvTujuan" />
+
+    <TextView
+        android:id="@+id/tvTanggalKeberangkatan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:fontFamily="@font/robotomedium"
+        android:text="Tanggal Keberangkatan"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@+id/editTujuan"
+        app:layout_constraintTop_toBottomOf="@+id/editTujuan" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/edittvTanggalKeberangkatan"
+        android:layout_width="300dp"
+        android:layout_height="48dp"
+        android:drawableStart="@drawable/ic_calendar"
+        android:drawablePadding="7dp"
+        android:fontFamily="@font/robotoregular"
+        android:hint="Kamis, 14 Desember 2022"
+        android:paddingStart="7dp"
+        android:paddingEnd="10dp"
+        app:layout_constraintStart_toStartOf="@+id/tvTanggalKeberangkatan"
+        app:layout_constraintTop_toBottomOf="@+id/tvTanggalKeberangkatan" />
+
+    <TextView
+        android:id="@+id/tvPenumpang"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:fontFamily="@font/robotomedium"
+        android:text="Penumpang"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@+id/edittvTanggalKeberangkatan"
+        app:layout_constraintTop_toBottomOf="@+id/edittvTanggalKeberangkatan" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/editPenumpang"
+        android:layout_width="300dp"
+        android:layout_height="48dp"
+        android:drawableStart="@drawable/ic_user"
+        android:drawablePadding="5dp"
+        android:fontFamily="@font/robotoregular"
+        android:hint="2 Orang"
+        android:paddingStart="5dp"
+        android:paddingEnd="10dp"
+        app:layout_constraintStart_toStartOf="@+id/tvPenumpang"
+        app:layout_constraintTop_toBottomOf="@+id/tvPenumpang" />
+
+    <View
+        android:id="@+id/view4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:background="@color/white"
+        app:layout_constraintEnd_toEndOf="@id/view3"
+        app:layout_constraintStart_toStartOf="@id/view3"
+        app:layout_constraintTop_toBottomOf="@+id/view3" />
+
+    <Button
+        android:id="@+id/btnCari"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:layout_marginBottom="10dp"
+        android:fontFamily="@font/robotomedium"
+        android:gravity="center"
+        android:letterSpacing="0"
+        android:text="Cari"
+        android:textAllCaps="false"
+        android:textSize="22sp"
+        app:backgroundTint="@color/dark_blue"
+        app:cornerRadius="5dp"
+        app:layout_constraintBottom_toBottomOf="@+id/view3"
+        app:layout_constraintEnd_toEndOf="@+id/editPenumpang"
+        app:layout_constraintStart_toStartOf="@+id/editPenumpang"
+        app:layout_constraintTop_toBottomOf="@+id/editPenumpang" />
+
+    <TextView
+        android:id="@+id/tvCovid19"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="34dp"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/robotomedium"
+        android:text="Informasi Terkait COVID-19"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/view4" />
+
+    <ImageView
+        android:id="@+id/cardCovid19"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        app:layout_constraintStart_toStartOf="@+id/tvCovid19"
+        app:layout_constraintTop_toBottomOf="@+id/tvCovid19"
+        app:srcCompat="@drawable/beranda__covid19_card" />
+
+    <TextView
+        android:id="@+id/tvPerjalananFavorit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/robotomedium"
+        android:text="Perjalanan Favorit"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@+id/cardCovid19"
+        app:layout_constraintTop_toBottomOf="@+id/cardCovid19" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
