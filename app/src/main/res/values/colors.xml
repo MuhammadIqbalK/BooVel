@@ -8,7 +8,7 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
 
-<!--    figma color-->
+<!--figma color-->
 
     <color name="green_tosca">#4CCB9E</color>
     <color name="dark_blue">#213767</color>
@@ -16,8 +16,4 @@
     <color name="trans_font1">#80000000</color>
     <color name="trans_font2"> #99000000</color>
     <color name="red_font">#FF0000</color>
-
-
-
-
 </resources>
