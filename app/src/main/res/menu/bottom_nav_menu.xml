@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/berandaFragment"
+        android:icon="@drawable/ic_beranda"
+        android:title="@string/title_beranda" />
+    <item
+        android:id="@+id/mitraFragment"
+        android:icon="@drawable/ic_mitra"
+        android:title="@string/title_mitra" />
+    <item
+        android:id="@+id/tiketFragment"
+        android:icon="@drawable/ic_tiket"
+        android:title="@string/title_tiket" />
+</menu>

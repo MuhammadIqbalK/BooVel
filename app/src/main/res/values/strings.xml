@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">BooVel</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="title_beranda">Beranda</string>
+    <string name="title_mitra">Mitra</string>
+    <string name="title_tiket">Tiket</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

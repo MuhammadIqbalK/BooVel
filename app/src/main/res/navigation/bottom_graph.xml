@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/bottom_nav"
+    app:startDestination="@id/berandaFragment">
+
+    <fragment
+        android:id="@+id/berandaFragment"
+        android:name="com.eunoiagroup.boovel.BerandaFragment"
+        android:label="fragment_beranda"
+        tools:layout="@layout/fragment_beranda" />
+    <fragment
+        android:id="@+id/mitraFragment"
+        android:name="com.eunoiagroup.boovel.MitraFragment"
+        android:label="fragment_mitra"
+        tools:layout="@layout/fragment_mitra" />
+    <fragment
+        android:id="@+id/tiketFragment"
+        android:name="com.eunoiagroup.boovel.TiketFragment"
+        android:label="fragment_tiket"
+        tools:layout="@layout/fragment_tiket" />
+
+</navigation>
