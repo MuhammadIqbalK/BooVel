@@ -12,16 +12,18 @@
         android:layout_height="wrap_content"
         android:src="@drawable/beranda_shape"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        android:contentDescription="@string/beranda_abstract_desc"/>
 
     <ScrollView
         android:id="@+id/scrollView2"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:scrollbars="none">
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
             android:orientation="vertical">
 
             <RelativeLayout
@@ -30,19 +32,19 @@
                 android:layout_marginStart="30dp"
                 android:layout_marginTop="30dp"
                 android:layout_marginEnd="30dp">
-
                 <ImageView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_alignParentEnd="true"
                     android:layout_marginEnd="45dp"
-                    android:src="@drawable/ic_account" />
-
+                    android:src="@drawable/ic_account"
+                    android:contentDescription="@string/beranda_profile_ic_desc"/>
                 <ImageView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_alignParentEnd="true"
-                    android:src="@drawable/ic_notifications" />
+                    android:src="@drawable/ic_notifications"
+                    android:contentDescription="@string/beranda_notifications_ic_desc" />
             </RelativeLayout>
 
             <androidx.cardview.widget.CardView
@@ -53,7 +55,6 @@
                 android:layout_marginBottom="30dp"
                 app:cardCornerRadius="10dp"
                 app:cardElevation="4dp">
-
                 <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -68,7 +69,6 @@
                         android:text="Asal"
                         android:textColor="@color/black"
                         android:textSize="17sp" />
-
                     <com.google.android.material.textfield.TextInputEditText
                         android:id="@+id/editAsal"
                         android:layout_width="300dp"
@@ -89,7 +89,6 @@
                         android:text="Tujuan"
                         android:textColor="@color/black"
                         android:textSize="17sp" />
-
                     <com.google.android.material.textfield.TextInputEditText
                         android:id="@+id/editTujuan"
                         android:layout_width="300dp"
@@ -110,7 +109,6 @@
                         android:text="Tanggal Keberangkatan"
                         android:textColor="@color/black"
                         android:textSize="17sp" />
-
                     <com.google.android.material.textfield.TextInputEditText
                         android:id="@+id/edittvTanggalKeberangkatan"
                         android:layout_width="300dp"
@@ -131,7 +129,6 @@
                         android:text="Penumpang"
                         android:textColor="@color/black"
                         android:textSize="17sp" />
-
                     <com.google.android.material.textfield.TextInputEditText
                         android:id="@+id/editPenumpang"
                         android:layout_width="300dp"
@@ -186,7 +183,8 @@
                         android:layout_marginStart="30dp"
                         android:layout_marginEnd="30dp"
                         android:layout_marginBottom="10dp"
-                        android:src="@drawable/beranda_covid19_card" />
+                        android:src="@drawable/beranda_covid19_card"
+                        android:contentDescription="@string/beranda_covid19_card_desc"/>
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -216,19 +214,22 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_marginEnd="7dp"
-                                android:src="@drawable/beranda_favorit_card_1" />
+                                android:src="@drawable/beranda_favorit_card_1"
+                                android:contentDescription="@string/beranda_favorites_card_desc"/>
 
                             <ImageView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_marginEnd="7dp"
-                                android:src="@drawable/beranda_favorit_card_2" />
+                                android:src="@drawable/beranda_favorit_card_2"
+                                android:contentDescription="@string/beranda_favorites_card_desc" />
 
                             <ImageView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_marginEnd="7dp"
-                                android:src="@drawable/beranda_favorit_card_3" />
+                                android:src="@drawable/beranda_favorit_card_3"
+                                android:contentDescription="@string/beranda_favorites_card_desc" />
                         </LinearLayout>
                     </HorizontalScrollView>
 

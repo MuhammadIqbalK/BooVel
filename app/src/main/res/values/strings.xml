@@ -4,6 +4,19 @@
     <string name="title_beranda">Beranda</string>
     <string name="title_mitra">Mitra</string>
     <string name="title_tiket">Tiket</string>
+
+    <string name="onboarding_title_1">Banyak Kemudahan Dalam Satu Aplikasi</string>
+    <string name="onboarding_desc_1">Dengan BooVel anda dapat membeli tiket travel yang sesuai dengan keinginan anda</string>
+    <string name="onboarding_title_2">Tiket</string>
+    <string name="onboarding_desc_2">Tiket</string>
+    <string name="onboarding_title_3">Tiket</string>
+    <string name="onboarding_desc_3">Tiket</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="onboarding_img_desc">onboarding_images</string>
+    <string name="beranda_abstract_desc">beranda_images</string>
+    <string name="beranda_covid19_card_desc">beranda_images</string>
+    <string name="beranda_favorites_card_desc">beranda_images</string>
+    <string name="beranda_profile_ic_desc">beranda_icons</string>
+    <string name="beranda_notifications_ic_desc">beranda_icons</string>
 </resources>
