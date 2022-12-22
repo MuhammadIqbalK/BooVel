@@ -7,21 +7,13 @@
     android:background="@color/green_tosca"
     tools:context=".OnBoardingActivity">
 
-    <View
-        android:id="@+id/view"
-        android:layout_width="0dp"
-        android:layout_height="300dp"
-        android:background="@drawable/onboarding_card"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
 
     <com.google.android.material.button.MaterialButton
-        android:id="@+id/button"
+        android:id="@+id/btnOnBoarding"
         android:layout_width="0dp"
         android:layout_height="56dp"
-        android:layout_marginEnd="32dp"
-        android:layout_marginBottom="24dp"
+        android:layout_marginEnd="35dp"
+        android:layout_marginBottom="15dp"
         android:gravity="center_horizontal"
         android:textAllCaps="true"
         app:backgroundTint="@color/dark_blue"
@@ -32,40 +24,33 @@
         app:layout_constraintEnd_toEndOf="parent"
         tools:ignore="SpeakableTextPresentCheck" />
 
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="310dp"
+    <View
+        android:id="@+id/view"
+        android:layout_width="0dp"
+        android:layout_height="310dp"
+        android:background="@drawable/onboarding_card"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/onBoardingViewPager"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="27dp"
-        android:fontFamily="@font/robotomedium"
-        android:text="Banyak Kemudahan Dalam Satu Aplikasi"
-        android:textAllCaps="false"
-        android:textColor="@color/dark_blue"
-        android:textSize="32sp"
-        android:textStyle="normal"
+        android:layout_marginTop="83dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/view" />
+        app:layout_constraintTop_toTopOf="parent" />
 
-    <TextView
-        android:id="@+id/textView2"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
-        android:fontFamily="@font/robotoregular"
-        android:text="Dengan BooVel anda dapat membeli tiket travel yang sesuai dengan keinginan anda"
-        android:textSize="20sp"
-        app:layout_constraintEnd_toEndOf="@+id/textView"
-        app:layout_constraintStart_toStartOf="@+id/textView"
-        app:layout_constraintTop_toBottomOf="@+id/textView" />
-
-    <ImageView
-        android:id="@+id/imageView"
+    <LinearLayout
+        android:id="@+id/onBoardingIndicators"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:layout_constraintBottom_toTopOf="@+id/view"
-        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginStart="35dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="@+id/btnOnBoarding"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/onboarding_ilustration_1" />
+        app:layout_constraintTop_toTopOf="@+id/btnOnBoarding" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
