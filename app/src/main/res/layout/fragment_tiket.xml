@@ -18,17 +18,24 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
+
         <com.google.android.material.tabs.TabLayout
-            android:id="@+id/tab_layout"
+            android:id="@+id/tablayout"
             android:layout_width="match_parent"
             android:layout_height="55dp"
             app:tabIndicatorColor="@color/dark_blue"
             app:tabSelectedTextColor="@color/dark_blue"
-            app:tabTextColor="@color/black"/>
-        <androidx.viewpager2.widget.ViewPager2
-            android:id="@+id/view_pager"
+            app:tabTextAppearance="@style/TabLayoutTextStyle"
+            app:tabTextColor="@color/inactive_indicators"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/viewPager"
             android:layout_width="match_parent"
-            android:layout_height="match_parent" />
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@color/white"
+            tools:ignore="SpeakableTextPresentCheck" />
     </LinearLayout>
 
 </FrameLayout>

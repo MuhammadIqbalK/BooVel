@@ -13,4 +13,9 @@
         <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
         <!-- Customize your theme here. -->
     </style>
+    
+    <style name="TabLayoutTextStyle">
+        <item name="android:textSize">17sp</item>
+        <item name="android:fontFamily">@font/robotomedium</item>
+    </style>
 </resources>
