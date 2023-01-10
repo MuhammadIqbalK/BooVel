@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "1018503815270",
+    "firebase_url": "https://booveltest-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "booveltest",
+    "storage_bucket": "booveltest.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1018503815270:android:b0f4f21cd0be821d3f8da7",
+        "android_client_info": {
+          "package_name": "com.eunoiagroup.boovel"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1018503815270-f7vq9uttdmjb45lqe8v77uuot6okss98.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.eunoiagroup.boovel",
+            "certificate_hash": "ff6e294f239ffa4eec9c96689b59492eeedac95c"
+          }
+        },
+        {
+          "client_id": "1018503815270-7bhkqb2k430aft28lelgl6dfcq0ogd95.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAAohkSSBsDVaNWadOme10F9YTbXSvz9UQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1018503815270-7bhkqb2k430aft28lelgl6dfcq0ogd95.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
