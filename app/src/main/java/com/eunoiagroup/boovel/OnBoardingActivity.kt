@@ -67,7 +67,7 @@ class OnBoardingActivity : AppCompatActivity() {
     }
 
     private fun navigateToRegisterActivity() {
-        startActivity(Intent(applicationContext, DaftarActivity::class.java))
+        startActivity(Intent(applicationContext, MasukActivity::class.java))
         finish()
     }
 

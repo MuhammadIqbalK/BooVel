@@ -59,7 +59,7 @@
             android:drawablePadding="7dp"
             android:fontFamily="@font/robotoregular"
             android:hint="Password"
-            android:inputType="textVisiblePassword"
+            android:inputType="textPassword"
             android:padding="12dp"
             android:textColor="@color/trans_font1"
             android:textSize="12sp"
@@ -87,7 +87,7 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
-        <Button
+        <com.google.android.material.button.MaterialButton
             android:id="@+id/btnMasuk"
             android:layout_width="0dp"
             android:layout_height="64dp"

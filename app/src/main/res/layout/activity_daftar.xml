@@ -87,24 +87,6 @@
             app:layout_constraintTop_toBottomOf="@+id/editnotelp_daftar" />
 
         <EditText
-            android:id="@+id/editnotelp_daftar"
-            android:layout_width="0dp"
-            android:layout_height="45dp"
-            android:layout_marginTop="11dp"
-            android:background="@drawable/formkolom"
-            android:drawableLeft="@drawable/ic_phone"
-            android:drawablePadding="7dp"
-            android:fontFamily="@font/robotoregular"
-            android:hint="Nomor telepon"
-            android:inputType="text|number"
-            android:padding="12dp"
-            android:textColor="@color/trans_font1"
-            android:textSize="12sp"
-            app:layout_constraintEnd_toEndOf="@+id/editNama_daftar"
-            app:layout_constraintStart_toStartOf="@+id/editNama_daftar"
-            app:layout_constraintTop_toBottomOf="@+id/editNama_daftar" />
-
-        <EditText
             android:id="@+id/editNama_daftar"
             android:layout_width="0dp"
             android:layout_height="45dp"
@@ -124,7 +106,27 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
-        <Button
+        <EditText
+            android:id="@+id/editnotelp_daftar"
+            android:layout_width="0dp"
+            android:layout_height="45dp"
+            android:layout_marginTop="11dp"
+            android:background="@drawable/formkolom"
+            android:drawableLeft="@drawable/ic_phone"
+            android:drawablePadding="7dp"
+            android:fontFamily="@font/robotoregular"
+            android:hint="Nomor telepon"
+            android:inputType="text|number"
+            android:padding="12dp"
+            android:textColor="@color/trans_font1"
+            android:textSize="12sp"
+            app:layout_constraintEnd_toEndOf="@+id/editNama_daftar"
+            app:layout_constraintStart_toStartOf="@+id/editNama_daftar"
+            app:layout_constraintTop_toBottomOf="@+id/editNama_daftar" />
+
+
+
+        <com.google.android.material.button.MaterialButton
             android:id="@+id/btnDaftar"
             android:layout_width="0dp"
             android:layout_height="64dp"
@@ -132,6 +134,7 @@
             android:fontFamily="@font/robotomedium"
             android:letterSpacing="0"
             android:text="Daftar"
+            android:textColor="@color/white"
             android:textAllCaps="false"
             android:textSize="13sp"
             app:backgroundTint="@color/dark_blue"
