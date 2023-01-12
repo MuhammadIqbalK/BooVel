@@ -19,4 +19,13 @@
         <item name="android:textSize">17sp</item>
         <item name="android:fontFamily">@font/robotomedium</item>
     </style>
+    <style name="SearchBarTextStyle">
+        <item name="colorControlNormal">@color/black</item>
+        <item name="queryHint">Ted</item>
+        <item name="fontFamily">@font/robotoregular</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:queryHint">@color/black</item>
+        <item name="android:editTextColor">@color/black</item>
+    </style>
+
 </resources>

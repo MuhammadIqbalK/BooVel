@@ -1,13 +1,18 @@
 package com.eunoiagroup.boovel
 
-import android.app.Activity
+import android.annotation.SuppressLint
+import android.app.DatePickerDialog
 import android.content.Intent
 import android.os.Bundle
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
+import android.widget.EditText
+import androidx.fragment.app.Fragment
+import java.nio.channels.CancelledKeyException
+import java.text.SimpleDateFormat
+import java.util.*
 
 // TODO: Rename parameter arguments, choose names that match
 // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -23,6 +28,8 @@ class BerandaFragment : Fragment() {
     // TODO: Rename and change types of parameters
     private var param1: String? = null
     private var param2: String? = null
+    private lateinit var  etDatePicker: EditText
+
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -38,6 +45,38 @@ class BerandaFragment : Fragment() {
     ): View? {
         // Inflate the layout for this fragment
         val view = inflater.inflate(R.layout.fragment_beranda, container, false)
+
+        etDatePicker = view.findViewById(R.id.edittvTanggalKeberangkatan)
+
+        val c = Calendar.getInstance()
+
+        val year = c.get(Calendar.YEAR)
+        val month = c.get(Calendar.MONTH)
+        val day = c.get(Calendar.DAY_OF_MONTH)
+
+        etDatePicker.setOnClickListener {
+            context?.let {  DatePickerDialog(it, { view, mYear, monthOfYear, dayOfMonth ->
+
+                val simpleDateFormat = SimpleDateFormat("EEEE")
+                val date = Date(mYear, month, dayOfMonth - 1)
+                val dayString = simpleDateFormat.format(date) //returns true day name for current month only
+
+                etDatePicker.setText("$dayString, $dayOfMonth/${monthOfYear + 1}/$mYear")
+
+            }, year, month, day).show() }
+        }
+
+        val editAsal: EditText = view.findViewById(R.id.editAsal)
+        editAsal.setOnClickListener() {
+            val intent = Intent(activity, InputAsalActivity::class.java)
+            startActivity(intent)
+        }
+
+        val editTujuan: EditText = view.findViewById(R.id.editTujuan)
+        editTujuan.setOnClickListener() {
+            val intent = Intent(activity, InputAsalActivity::class.java)
+            startActivity(intent)
+        }
 
         val search = view.findViewById<Button>(R.id.btnCari)
         search.setOnClickListener{
