@@ -11,6 +11,7 @@
 <!--figma color-->
 
     <color name="green_tosca">#4CCB9E</color>
+    <color name="light_green_tosca">#264CCB9E</color>
     <color name="dark_blue">#213767</color>
     <color name="grey">#F0F0F0</color>
     <color name="trans_font1">#80000000</color>
@@ -21,4 +22,6 @@
     <color name="light_blue">#1877F2</color>
     <color name="orange">#F07149</color>
     <color name="divider">#40000000</color>
+    <color name="yellow">#eed202</color>
+    <color name="light_yellow">#26eed202</color>
 </resources>

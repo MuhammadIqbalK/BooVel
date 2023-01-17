@@ -16,7 +16,7 @@
         android:fontFamily="@font/robotomedium"
         android:text="Masuk"
         android:textColor="@color/black"
-        android:textSize="22sp"
+        android:textSize="27sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -29,7 +29,7 @@
         android:fontFamily="@font/robotoregular"
         android:text="Silahkan masuk untuk melanjutkan"
         android:textColor="@color/black"
-        android:textSize="12sp"
+        android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="@+id/textmasuk1"
         app:layout_constraintHorizontal_bias="0.505"
         app:layout_constraintStart_toStartOf="@+id/textmasuk1"
@@ -39,9 +39,9 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/constraintLayout"
         android:layout_width="0dp"
-        android:layout_height="240dp"
+        android:layout_height="250dp"
         android:layout_marginStart="17dp"
-        android:layout_marginTop="22dp"
+        android:layout_marginTop="15dp"
         android:layout_marginEnd="17dp"
         android:background="@drawable/daftar_login_card"
         app:layout_constraintEnd_toEndOf="parent"
@@ -62,7 +62,7 @@
             android:inputType="textPassword"
             android:padding="12dp"
             android:textColor="@color/trans_font1"
-            android:textSize="12sp"
+            android:textSize="16sp"
             app:layout_constraintEnd_toEndOf="@+id/editemail_masuk"
             app:layout_constraintStart_toStartOf="@+id/editemail_masuk"
             app:layout_constraintTop_toBottomOf="@+id/editemail_masuk" />
@@ -82,7 +82,7 @@
             android:inputType="textEmailAddress"
             android:padding="12dp"
             android:textColor="@color/trans_font1"
-            android:textSize="12sp"
+            android:textSize="16sp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
@@ -96,7 +96,7 @@
             android:letterSpacing="0"
             android:text="Masuk"
             android:textAllCaps="false"
-            android:textSize="13sp"
+            android:textSize="18sp"
             app:backgroundTint="@color/dark_blue"
             app:cornerRadius="15dp"
             app:layout_constraintEnd_toEndOf="@+id/editpassword_masuk"
@@ -108,13 +108,14 @@
             android:id="@+id/textmasuk3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
+            android:layout_marginEnd="39dp"
+            android:layout_marginBottom="5dp"
             android:fontFamily="@font/robotoregular"
             android:text="Belum memiliki akun?"
             android:textColor="@color/black"
-            android:textSize="12sp"
+            android:textSize="15sp"
+            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.32"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/btnMasuk" />
 
@@ -122,15 +123,14 @@
             android:id="@+id/texttodaftar"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
+            android:layout_marginStart="3dp"
             android:fontFamily="@font/robotoregular"
             android:text="Daftar"
             android:textColor="@color/dark_blue"
-            android:textSize="12sp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.064"
+            android:textSize="15sp"
+            app:layout_constraintBottom_toBottomOf="@+id/textmasuk3"
             app:layout_constraintStart_toEndOf="@+id/textmasuk3"
-            app:layout_constraintTop_toBottomOf="@+id/btnMasuk" />
+            app:layout_constraintTop_toTopOf="@+id/textmasuk3" />
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>
@@ -139,7 +139,7 @@
         android:id="@+id/textmasuk4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="24dp"
+        android:layout_marginTop="32dp"
         android:fontFamily="@font/robotoregular"
         android:text="Atau dengan"
         android:textColor="@color/black"
@@ -152,47 +152,45 @@
         android:id="@+id/googlebtnmasuk"
         android:layout_width="0dp"
         android:layout_height="71dp"
-        android:layout_marginStart="29dp"
-        android:layout_marginBottom="150dp"
+        android:layout_marginEnd="16dp"
         android:background="@drawable/button_shape"
         android:drawableTop="@drawable/ic_google"
         android:fontFamily="@font/robotolight"
         android:paddingTop="12dp"
         android:text="Google"
         android:textSize="9sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintEnd_toStartOf="@+id/fbbtnmasuk"
+        app:layout_constraintTop_toTopOf="@+id/fbbtnmasuk" />
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/fbbtnmasuk"
         android:layout_width="90dp"
         android:layout_height="71dp"
-        android:layout_marginBottom="150dp"
+        android:layout_marginTop="32dp"
         android:background="@drawable/button_shape"
         android:drawableTop="@drawable/ic_facebook"
         android:fontFamily="@font/robotolight"
         android:paddingTop="12dp"
         android:text="Facebook"
         android:textSize="9sp"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textmasuk4" />
 
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/tamubtnmasuk"
         android:layout_width="0dp"
         android:layout_height="71dp"
-        android:layout_marginEnd="29dp"
-        android:layout_marginBottom="150dp"
+        android:layout_marginStart="16dp"
         android:background="@drawable/button_shape"
         android:drawableTop="@drawable/ic_person"
         android:fontFamily="@font/robotolight"
         android:paddingTop="12dp"
         android:text="Tamu"
         android:textSize="9sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
+        app:layout_constraintStart_toEndOf="@+id/fbbtnmasuk"
+        app:layout_constraintTop_toTopOf="@+id/fbbtnmasuk" />
 
 
 

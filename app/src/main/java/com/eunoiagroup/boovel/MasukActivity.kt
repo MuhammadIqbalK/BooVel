@@ -4,6 +4,7 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Patterns
+import android.widget.Button
 import android.widget.Toast
 import com.eunoiagroup.boovel.databinding.ActivityMasukBinding
 import com.google.firebase.auth.FirebaseAuth
@@ -17,8 +18,13 @@ class MasukActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(binding.root)
 
-        auth = FirebaseAuth.getInstance()
+        val tamubtnmasuk: Button = findViewById(R.id.tamubtnmasuk)
+        tamubtnmasuk.setOnClickListener{
+            val intent = Intent(this@MasukActivity, MainActivity::class.java)
+            startActivity(intent)
+        }
 
+        auth = FirebaseAuth.getInstance()
 
         binding.texttodaftar.setOnClickListener {
             val intent = Intent(this@MasukActivity, DaftarActivity::class.java)

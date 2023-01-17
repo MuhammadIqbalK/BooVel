@@ -15,6 +15,27 @@
         android:theme="@style/Theme.BooVel"
         tools:targetApi="31">
         <activity
+            android:name=".InformasiPembayaranActivity"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".DetailPembayaranActivity"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".PembayaranActivity"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
             android:name=".MasukActivity"
             android:exported="false">
             <meta-data

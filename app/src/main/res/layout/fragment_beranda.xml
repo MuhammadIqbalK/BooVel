@@ -83,7 +83,7 @@
                             android:drawablePadding="10dp"
                             android:focusable="false"
                             android:fontFamily="@font/robotoregular"
-                            android:hint="Bandar Lampung"
+                            android:hint="Jambi"
                             android:paddingStart="7dp"
                             android:paddingEnd="10dp" />
 

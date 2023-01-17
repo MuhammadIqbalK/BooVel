@@ -11,6 +11,8 @@ import androidx.appcompat.widget.SearchView
 
 class InputAsalActivity : AppCompatActivity() {
 
+    private lateinit var kotaArrayList: ArrayList<Kota>
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_input_asal)
@@ -18,17 +20,17 @@ class InputAsalActivity : AppCompatActivity() {
         val searchBar: SearchView = findViewById(R.id.searchBar)
         val searchList: ListView = findViewById(R.id.citiesList)
 
-        val user = arrayOf("Jakarta","Bandung","Surabaya","Yogyakarta","Semarang","Palangkaraya","Palembang",
+        val namaKota = arrayOf("Jakarta","Bandung","Surabaya","Yogyakarta","Semarang","Palangkaraya","Palembang",
             "Pekanbaru","Padang","Jambi","Medan","Pontianak","Balikpapan","Banjarmasin","Makassar")
 
-        val searchListAdapter : ArrayAdapter<String> = ArrayAdapter(this, android.R.layout.simple_list_item_1, user)
+        val searchListAdapter : ArrayAdapter<String> = ArrayAdapter(this, android.R.layout.simple_list_item_1, namaKota)
 
         searchList.adapter = searchListAdapter;
 
         searchBar.setOnQueryTextListener(object  : SearchView.OnQueryTextListener{
             override fun onQueryTextSubmit(query: String?): Boolean {
                 searchBar.clearFocus()
-                if (user.contains(query)){
+                if (namaKota.contains(query)){
                     searchListAdapter.filter.filter(query)
                 }
                 return false
@@ -38,6 +40,7 @@ class InputAsalActivity : AppCompatActivity() {
                 return false
             }
         })
+
 
         val tvBatal: TextView = findViewById(R.id.tvBatal)
         tvBatal.setOnClickListener {

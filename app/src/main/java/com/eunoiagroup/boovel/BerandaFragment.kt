@@ -1,6 +1,5 @@
 package com.eunoiagroup.boovel
 
-import android.annotation.SuppressLint
 import android.app.DatePickerDialog
 import android.content.Intent
 import android.os.Bundle
@@ -10,7 +9,6 @@ import android.view.ViewGroup
 import android.widget.Button
 import android.widget.EditText
 import androidx.fragment.app.Fragment
-import java.nio.channels.CancelledKeyException
 import java.text.SimpleDateFormat
 import java.util.*
 
@@ -66,7 +64,7 @@ class BerandaFragment : Fragment() {
             }, year, month, day).show() }
         }
 
-        val editAsal: EditText = view.findViewById(R.id.editAsal)
+        var editAsal: EditText = view.findViewById(R.id.editAsal)
         editAsal.setOnClickListener() {
             val intent = Intent(activity, InputAsalActivity::class.java)
             startActivity(intent)
