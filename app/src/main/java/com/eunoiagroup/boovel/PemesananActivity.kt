@@ -17,6 +17,12 @@ class PemesananActivity : AppCompatActivity() {
             startActivity(intent)
         }
 
+        val btnAturPosisiDuduk: Button = findViewById(R.id.btnAturPosisiDuduk)
+        btnAturPosisiDuduk.setOnClickListener {
+            val intent = Intent(this@PemesananActivity, PilihKursiActivity::class.java)
+            startActivity(intent)
+        }
+
         val btnLanjutKePembayaran: Button = findViewById(R.id.btnLanjutKePembayaran)
         btnLanjutKePembayaran.setOnClickListener {
             val intent = Intent(this@PemesananActivity, PembayaranActivity::class.java)
