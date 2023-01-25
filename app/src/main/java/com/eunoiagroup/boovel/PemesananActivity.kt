@@ -13,7 +13,7 @@ class PemesananActivity : AppCompatActivity() {
 
         val btnBack: ImageView = findViewById(R.id.btnBack)
         btnBack.setOnClickListener {
-            val intent = Intent(this@PemesananActivity, MainActivity::class.java)
+            val intent = Intent(this@PemesananActivity, DetailPerjalananActivity::class.java)
             startActivity(intent)
         }
 
