@@ -42,7 +42,6 @@ class PencarianActivity : AppCompatActivity() {
         val db = FirebaseFirestore.getInstance()
         val collectionRef = db.collection("tiket")
 
-
         collectionRef.get().addOnCompleteListener { task ->
             if (task.isSuccessful) {
                 for (document in task.result!!) {
@@ -57,19 +56,19 @@ class PencarianActivity : AppCompatActivity() {
                     jamA.text = item.jam_berangkat
                     val jamB = findViewById<TextView>(R.id.jamdbtiba)
                     jamB.text = item.jam_sampai
-                   var selisihj = findViewById<TextView>(R.id.jamselisih)
-                    try {
-                        val result = subtractTime(jamA.text as String, jamB.text as String)
-                        selisihj.text = result
-                    } catch (e: Exception) {
-                        // handle the error
-                        val builder = AlertDialog.Builder(this)
-                        builder.setTitle("Error")
-                        builder.setMessage(e.message)
-                        builder.setPositiveButton("OK") { _, _ -> }
-                        val dialog: AlertDialog = builder.create()
-                        dialog.show()
-                    }
+//                   var selisihj = findViewById<TextView>(R.id.jamselisih)
+//                    try {
+//                        val result = subtractTime(jamA.text as String, jamB.text as String)
+//                        selisihj.text = result
+//                    } catch (e: Exception) {
+//                        // handle the error
+//                        val builder = AlertDialog.Builder(this)
+//                        builder.setTitle("Error")
+//                        builder.setMessage(e.message)
+//                        builder.setPositiveButton("OK") { _, _ -> }
+//                        val dialog: AlertDialog = builder.create()
+//                        dialog.show()
+//                    }
 
 
 
