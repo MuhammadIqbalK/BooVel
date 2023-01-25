@@ -238,7 +238,7 @@
                                 <ImageView
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
-                                    android:layout_marginEnd="7dp"
+                                    android:layout_marginEnd="30dp"
                                     android:src="@drawable/beranda_favorit_card_3" />
                             </LinearLayout>
                         </HorizontalScrollView>

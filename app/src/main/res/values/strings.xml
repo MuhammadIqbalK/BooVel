@@ -2,7 +2,7 @@
     <string name="app_name">BooVel</string>
     <string name="title_activity_main">MainActivity</string>
     <string name="title_beranda">Beranda</string>
-    <string name="title_mitra">Mitra</string>
+    <string name="title_travel">Travel</string>
     <string name="title_tiket">Tiket</string>
 
     <string name="onboarding_title_1">Banyak Kemudahan Dalam Satu Aplikasi</string>

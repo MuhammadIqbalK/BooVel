@@ -7,7 +7,7 @@
     <item
         android:id="@+id/mitraFragment"
         android:icon="@drawable/ic_mitra"
-        android:title="@string/title_mitra" />
+        android:title="@string/title_travel" />
     <item
         android:id="@+id/tiketFragment"
         android:icon="@drawable/ic_tiket"
