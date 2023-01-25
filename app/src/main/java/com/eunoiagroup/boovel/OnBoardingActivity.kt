@@ -40,8 +40,8 @@ class OnBoardingActivity : AppCompatActivity() {
                 ),
                 OnBoardingItem(
                     imageOnBoarding = R.drawable.onboarding_ilustration_1,
-                    tvTitleOnBoarding = "Komunitas",
-                    tvDescOnBoarding = "Tersedia fitur komunitas untuk mengumpulkan orang-orang yang menyukai pada bidang kerajinan tangan untuk berinteraksi."
+                    tvTitleOnBoarding = "Informasi Agen Travel Lengkap",
+                    tvDescOnBoarding = "Dengan adanya informasi detali dari mitra travel akan membuatmu nyaman dan aman ketika perjalanan"
                 )
             )
         )

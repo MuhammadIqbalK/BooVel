@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.ImageView
 import android.widget.TextView
+import androidx.cardview.widget.CardView
 import androidx.constraintlayout.widget.ConstraintLayout
 import com.google.firebase.firestore.FirebaseFirestore
 
@@ -22,7 +23,7 @@ class PencarianActivity : AppCompatActivity() {
             startActivity(intent)
         }
 
-        val cardPerjalanan1: ImageView = findViewById(R.id.cardPerjalanan1)
+        val cardPerjalanan1: CardView = findViewById(R.id.cardPerjalanan1)
         cardPerjalanan1.setOnClickListener {
             val intent = Intent(this@PencarianActivity, DetailPerjalananActivity::class.java)
             startActivity(intent)
