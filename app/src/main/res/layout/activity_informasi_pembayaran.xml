@@ -124,7 +124,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
             android:fontFamily="@font/robotoblack"
-            android:text="Minggu, 15 Januari 2023"
+            android:text="Rabu, 25 Januari 2023"
             android:textColor="@color/trans_font2"
             android:textSize="17sp"
             app:layout_constraintStart_toStartOf="parent"

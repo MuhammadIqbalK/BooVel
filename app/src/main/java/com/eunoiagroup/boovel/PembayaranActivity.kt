@@ -14,7 +14,7 @@ class PembayaranActivity : AppCompatActivity() {
 
         val btnBack: ImageView = findViewById(R.id.btnBack)
         btnBack.setOnClickListener {
-            val intent = Intent(this@PembayaranActivity, DetailPerjalananActivity::class.java)
+            val intent = Intent(this@PembayaranActivity, PemesananActivity::class.java)
             startActivity(intent)
         }
 

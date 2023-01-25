@@ -3,6 +3,7 @@ package com.eunoiagroup.boovel
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.widget.Button
 import android.widget.ImageView
 
 class InformasiPembayaranActivity : AppCompatActivity() {
@@ -13,6 +14,12 @@ class InformasiPembayaranActivity : AppCompatActivity() {
         val btnBack: ImageView = findViewById(R.id.btnBack)
         btnBack.setOnClickListener {
             val intent = Intent(this@InformasiPembayaranActivity, DetailPembayaranActivity::class.java)
+            startActivity(intent)
+        }
+
+        val btnLanjutKePembayaran: Button = findViewById(R.id.btnLanjutKePembayaran)
+        btnLanjutKePembayaran.setOnClickListener {
+            val intent = Intent(this@InformasiPembayaranActivity, MainActivity::class.java)
             startActivity(intent)
         }
 

@@ -129,7 +129,7 @@
                             android:focusable="false"
                             android:focusableInTouchMode="false"
                             android:fontFamily="@font/robotoregular"
-                            android:hint="Kamis, 14 Desember 2022"
+                            android:hint="Rabu, 25 Januari 2023"
                             android:paddingStart="7dp"
                             android:paddingEnd="10dp" />
 

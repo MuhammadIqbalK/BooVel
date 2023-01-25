@@ -50,57 +50,55 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:padding="4dp"
-            android:paddingEnd="4dp"
             app:layout_constraintTop_toBottomOf="@+id/toolbar2">
 
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:id="@+id/constraintLayout3"
                 android:layout_width="match_parent"
-                android:layout_height="200dp"
-                android:padding="3dp"
+                android:layout_height="215dp"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent">
 
-                <!--            <ImageView-->
-                <!--                android:id="@+id/imageView3"-->
-                <!--                android:layout_width="wrap_content"-->
-                <!--                android:layout_height="wrap_content"-->
-                <!--                android:src="@drawable/img_mobil_1"-->
-                <!--                app:layout_constraintStart_toStartOf="parent"-->
-                <!--                app:layout_constraintTop_toTopOf="parent" />-->
+                            <ImageView
+                                android:id="@+id/imgMobil1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/img_mobil_1"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent" />
 
-                <!--            <ImageView-->
-                <!--                android:id="@+id/imageView5"-->
-                <!--                android:layout_width="wrap_content"-->
-                <!--                android:layout_height="wrap_content"-->
-                <!--                android:src="@drawable/img_mobil_2"-->
-                <!--                app:layout_constraintEnd_toEndOf="parent"-->
-                <!--                app:layout_constraintTop_toTopOf="parent" />-->
+                            <ImageView
+                                android:id="@+id/imgMobil2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/img_mobil_2"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintTop_toTopOf="parent" />
 
-                <!--            <ImageView-->
-                <!--                android:id="@+id/imageView6"-->
-                <!--                android:layout_width="wrap_content"-->
-                <!--                android:layout_height="wrap_content"-->
-                <!--                android:src="@drawable/img_mobil_3"-->
-                <!--                app:layout_constraintEnd_toStartOf="@+id/imageView8"-->
-                <!--                app:layout_constraintStart_toStartOf="parent"-->
-                <!--                app:layout_constraintTop_toBottomOf="@+id/imageView3" />-->
+                            <ImageView
+                                android:id="@+id/imgMobil3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/img_mobil_3"
+                                app:layout_constraintEnd_toStartOf="@+id/imgMobil4"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toBottomOf="@+id/imgMobil1" />
 
-                <!--            <ImageView-->
-                <!--                android:id="@+id/imageView8"-->
-                <!--                android:layout_width="wrap_content"-->
-                <!--                android:layout_height="wrap_content"-->
-                <!--                android:src="@drawable/img_mobil_4"-->
-                <!--                app:layout_constraintEnd_toStartOf="@+id/imageView7"-->
-                <!--                app:layout_constraintTop_toBottomOf="@+id/imageView5" />-->
+                            <ImageView
+                                android:id="@+id/imgMobil4"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/img_mobil_4"
+                                app:layout_constraintEnd_toStartOf="@+id/imgMobil5"
+                                app:layout_constraintTop_toBottomOf="@+id/imgMobil2" />
 
-                <!--            <ImageView-->
-                <!--                android:id="@+id/imageView7"-->
-                <!--                android:layout_width="wrap_content"-->
-                <!--                android:layout_height="wrap_content"-->
-                <!--                android:src="@drawable/img_mobil_5"-->
-                <!--                app:layout_constraintEnd_toEndOf="parent"-->
-                <!--                app:layout_constraintTop_toBottomOf="@+id/imageView5" />-->
+                            <ImageView
+                                android:id="@+id/imgMobil5"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/img_mobil_5"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintTop_toBottomOf="@+id/imgMobil2" />
             </androidx.constraintlayout.widget.ConstraintLayout>
 
             <androidx.cardview.widget.CardView
@@ -108,8 +106,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:background="@color/white"
-                app:layout_constraintTop_toBottomOf="@+id/constraintLayout3"
-                tools:layout_editor_absoluteX="4dp">
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/constraintLayout3">
 
                 <androidx.constraintlayout.widget.ConstraintLayout
                     android:layout_width="match_parent"
@@ -385,7 +383,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginTop="2dp"
                         android:fontFamily="@font/robotoregular"
-                        android:text="Senin, 16 Januari 2023 - 08.00 WIB"
+                        android:text="Rabu, 25 Januari 2023 - 08.00 WIB"
                         android:textSize="13sp"
                         app:layout_constraintStart_toStartOf="@+id/textView9"
                         app:layout_constraintTop_toBottomOf="@+id/textView9" />
@@ -418,7 +416,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginTop="2dp"
                         android:fontFamily="@font/robotoregular"
-                        android:text="Senin, 16 Januari 2023 - 16.00 WIB"
+                        android:text="Rabu, 25 Januari 2023 - 16.00 WIB"
                         android:textSize="13sp"
                         app:layout_constraintStart_toStartOf="@+id/textView11"
                         app:layout_constraintTop_toBottomOf="@+id/textView11" />
