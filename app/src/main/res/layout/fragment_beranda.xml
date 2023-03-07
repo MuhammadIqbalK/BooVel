@@ -187,7 +187,7 @@
                             android:layout_marginEnd="30dp"
                             android:layout_marginBottom="10dp"
                             android:fontFamily="@font/robotomedium"
-                            android:text="Informasi Tentang COVID-19"
+                            android:text="Promo Menarik"
                             android:textColor="@color/black"
                             android:textSize="18sp" />
 
@@ -197,7 +197,7 @@
                             android:layout_marginStart="30dp"
                             android:layout_marginEnd="30dp"
                             android:layout_marginBottom="10dp"
-                            android:src="@drawable/beranda_covid19_card" />
+                            android:src="@drawable/card_promo" />
 
                         <TextView
                             android:layout_width="wrap_content"
